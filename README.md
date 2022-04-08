@@ -1,27 +1,23 @@
-# AngularInterview2
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+# Angular Interview
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Backend
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+A REST service is available for your tests here:
+- https://jsonplaceholder.typicode.com/albums (and /albums/xxx for a specific resource)
+- https://jsonplaceholder.typicode.com/users (and /users/xxx for a specific resource)
+- https://jsonplaceholder.typicode.com/photos (and /photos?albumId=xxx for a specific album's photos)
 
-## Build
+# Issue to fix
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+My albums all display "Created by unknown" instead of the author's email.
+Can you find out why? And fix it?
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# I don't like Biz
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+According to our company policies, e-mail addresses that ends in .biz are suspicious.
+How could I highlight the email address if it ends with '.biz' ?
