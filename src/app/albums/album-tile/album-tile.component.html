@@ -1,0 +1,4 @@
+<mat-card (click)="click.emit(album?.id)">
+    <p>{{album?.title}}</p>
+    <p>Created by {{user?.email ?? 'unknown'}}</p>
+</mat-card>

@@ -1,0 +1,23 @@
+<div>
+
+    <mat-toolbar color="primary" class="mat-elevation-z2">
+        <span>My Application</span>
+    </mat-toolbar>
+
+    <ng-container *ngIf="albums$ | async as albums">
+        <mat-grid-list [cols]="8" gutterSize="1em">
+            <mat-grid-tile *ngFor="let album of albums">
+                <app-album-tile
+                        (click)="openAlbum($event)"
+                        [user]="findUserById(album.userId) | async"
+                        [album]="album">
+                </app-album-tile>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </ng-container>
+
+    <ng-container *ngIf="loading">
+        Loading...
+    </ng-container>
+
+</div>

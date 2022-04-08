@@ -1,0 +1,16 @@
+<div  *ngIf="album$ | async as album">
+
+    <mat-toolbar color="primary" class="mat-elevation-z2">
+        <span>{{ album.title }}</span>
+    </mat-toolbar>
+
+    <app-photos
+            *ngIf="photos$ | async as photos; else loading"
+            [photos]="photos">
+    </app-photos>
+
+    <ng-template #loading>
+        Loading...
+    </ng-template>
+
+</div>
